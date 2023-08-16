@@ -5,4 +5,4 @@
   2b. cut -d ',' -f1-8 ncbi_lineages_2023-04-10.csv > ncbi_lineages_2023-04-10_simp.csv
   2c. python reformat_ncbi_lineage.py (output: ncbi_lineages_2023-04-10_reformat.csv)
 3.voting-based taxonomy classification
-  
+  python voting-based-taxonomy-classification.py --input megablast_out.tbl --lineage ncbi_lineages_2023-04-10_reformat.csv --length xx --out xx
