@@ -3,7 +3,7 @@ import argparse
 
 
 parse = argparse.ArgumentParser(description="voting-based data cleaning and taxonomy classification")
-parse.add_argument("--in", help="input file", required=True)
+parse.add_argument("--input", help="input file", required=True)
 parse.add_argument("--lineage", help="the reformated NCBI lineages", required=True)
 parse.add_argument("--length", help="the file that contains the length of contigs or genomes. This file contains two columns seperated by Tab. the first column is the contig or genome name, the second column is the length (base pair) of the corresponding contigs or genomes.", required=True)
 parse.add_argument("--out", help="output file", required=True)
@@ -30,7 +30,7 @@ with open(args.length,'r') as fi:
 
 info={}
 info_1={}
-with open(args.in,'r') as fi:
+with open(args.input,'r') as fi:
      for line in fi:
          evalue=float(line.split('\t')[10])
          if evalue>0.00001:continue
