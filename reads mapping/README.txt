@@ -5,4 +5,5 @@ reference: https://gitlab.com/mcfrith/last
    lastal -P 50 -Q 1 -e 120 ripp_db/ripp_db_nt xx.fastq >  map/xx.maf
 3. reformat
    maf-convert blasttab map/xx.maf > reformat/xx.txt
-
+4. pair-mapped
+   python pair-mapped.py --input example.txt --path xx --out_o xx --out_s xx
