@@ -2,7 +2,7 @@ import argparse
 import pandas as pd
 
 parse = argparse.ArgumentParser(description="prepare for inext")
-parse.add_argument("--input", help="input file", required=True)
+parse.add_argument("--input", help="input file, i.e. supplementary table 1", required=True)
 parse.add_argument("--source", help="the source of data", required=True)
 parse.add_argument("--out", help="output file", required=True)
 args = parse.parse_args()
